@@ -25,6 +25,7 @@ nav {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: #fff;
     padding-bottom: 10px;
     position: relative;
@@ -40,7 +41,7 @@ nav {
         }
     }
     &__phones {
-        padding: 5px;
+        padding: 0 5px;
         font-size: 19px;
         a {
             display: block;

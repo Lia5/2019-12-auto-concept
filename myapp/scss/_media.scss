@@ -225,7 +225,7 @@
             border: none;
             color: #a0a0a0;
         }
-        &+.menu-bottom__item {
+        &:not(.for-mob-none)+.menu-bottom__item {
             a {
                 border-left: 1px solid #a0a0a0;
             }
@@ -233,6 +233,7 @@
         &--red a {
             color: #982423;
             font-weight: bold;
+            border-left: 1px solid #a0a0a0;
         }
     }
     .menu__dop {
@@ -245,13 +246,13 @@
         display: none;
     }
     .header .logo {
-        width: 186px;
+        width: 155px;
     }
 }
 
 @media only screen and (max-width: 374px) {
     .header__phones {
-        font-size: 17px;
+        font-size: 16px;
     }
 }
 @media only screen and (max-width: 320px) {
