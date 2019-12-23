@@ -48,12 +48,15 @@ nav {
     }
 }
 .logo {
-    width: 265px;
+    width: 236px;
+    padding-left: 20px;
     img {
         width: 100%;
     }
 } 
-
+.menu-mobile {
+    display: none;
+}
 
 .toggle-menu {
     display: none;
@@ -199,5 +202,7 @@ nav {
        
     }
 }
-
+.for-disp-none, .menu__dop {
+    display: none;
+}
 //header
