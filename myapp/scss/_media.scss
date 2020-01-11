@@ -188,29 +188,28 @@
         color: #000;
         &__item {
             width: 100%;
-            &:nth-child(2n+1) {
-                h2 {
-                    position: relative;
-                    z-index: 1;
+
+            h2 {
+                position: relative;
+                z-index: 1;
+                color: #000;
+                font-weight: bold;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 98%;
+                    left: 1%;
+                    top: 4%;
+                    height: 94%;
+                    background: #828283;
+                    background: linear-gradient(180deg,#f5f5f7 0,#828283 50%,#f5f5f7 100%);
+                    box-shadow: 2px 2px 5px 0 rgba(0,0,0,.75);
+                    transform: skew(-28deg,0deg);
+                    z-index: -1;
+                    border: 1px solid #828283;
+                }
+                a {
                     color: #000;
-                    font-weight: bold;
-                    &:before {
-                        content: "";
-                        position: absolute;
-                        width: 98%;
-                        left: 1%;
-                        top: 4%;
-                        height: 94%;
-                        background: #828283;
-                        background: linear-gradient(180deg,#f5f5f7 0,#828283 50%,#f5f5f7 100%);
-                        box-shadow: 2px 2px 5px 0 rgba(0,0,0,.75);
-                        transform: skew(-28deg,0deg);
-                        z-index: -1;
-                        border: 1px solid #828283;
-                    }
-                    a {
-                        color: #000;
-                    }
                 }
             }
         }
@@ -246,14 +245,18 @@
         display: none;
     }
     .header .logo {
-        width: 155px;
+        width: 180px;
+        padding-left: 10px;
+    }
+    .header__phones {
+        font-size: 16px;
+        a {
+            margin-bottom: 5px;
+        }
     }
 }
 
 @media only screen and (max-width: 374px) {
-    .header__phones {
-        font-size: 16px;
-    }
 }
 @media only screen and (max-width: 320px) {
 
